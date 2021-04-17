@@ -139,7 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Emp.cpp" />
     <ClCompile Include="struct_member_function.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Emp.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
