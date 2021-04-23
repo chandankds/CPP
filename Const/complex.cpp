@@ -14,7 +14,7 @@ complex::complex(int real) {
 
 complex::complex(int real, int imag) : real(10), imag(10)
 {
-	this->real = real; //if both are given it will take the inside one
+	this->real = real;
 	this->imag = imag;
 }
 
@@ -25,7 +25,8 @@ void complex::acceptRecord(void) {
 	std::cin >> (*this).imag; //I guess this is how arrow operator works 
 }
 
-void complex::printRecord(void) {
+// const complex *const this = &c1; // now internally this pointer is like this
+void complex::printRecord(void) const { //on constant object we can only call constant member function
 	std::cout << "Real :: " << this->real << std::endl;
 	std::cout << "Imag is :: " << this->imag << std::endl;
 }
