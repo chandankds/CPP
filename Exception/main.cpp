@@ -13,7 +13,8 @@
 	-> generic catch block catch(...) (this is called catch all handler) 
 	-> generic catch block should apper after all the specfic catch block.
 	-> Nested try catch block is allowed.
-	->  
+	-> exception specification list
+
 */
 
 /*

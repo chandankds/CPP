@@ -9,7 +9,9 @@
 
 /*
 	Class cannot be created as constant but c++11 have something called final if intrested explore it.
-
+	const should be in declaration and defination both.
+	member initilizer list should be in defination only.
+	defult argument should be in declaration only.
 */
 int main(void) {
 	using namespace ncomplex;
