@@ -30,9 +30,19 @@
 
 
 int main() {
-	pcomplex::complex c1;
-	nutility::setRecord(c1);
-	nutility::pirntRecord(c1);
+	int choice;
+	while ((nutility::menuList()) != 0)
+	{
+			//Remaining to just add switch cases not a big deal i guess.
+		try {
+			pcomplex::complex c1;
+			nutility::setRecord(c1);
+			nutility::pirntRecord(c1);
+		}
+		catch (nexception::IlligalException& ex) {
+			std::cout << ex.getMessage() << std::endl;
+		}
+	}
 	return 0;
 }
 
