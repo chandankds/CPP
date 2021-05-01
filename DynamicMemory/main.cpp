@@ -5,6 +5,7 @@
 	-> Create memory dynamically for a single dimentional array and use it. free it as well there is syntax difference.
 	-> delete[] ptr is used to free the array. its intersting because it can create problems if you dont use this
 	   syntax to delete array of objects in that case only the distructor of first object is called.
+	-> Create dynamic array inside the object. Done that in destructor check there.
 	-> 
 
 
