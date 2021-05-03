@@ -1,4 +1,5 @@
 #include<iostream>
+#include"Array.h"
 
 /*
 	-> There are 3 types of copy avaliable 
@@ -21,15 +22,19 @@
 		2. Allocate new memory of this size
 		3. Copy the contents of source objects to copyied object.
 	-> If you do not create a copy constructor for the class compiler genartaes default copy constructor.
-	-> Syntax 
+	-> Syntax Class (const Class &other) // it is a constructor with single parameter.
 */
 /*
 	-> Write a program to use copy constructor just put array in class
-	-> Write a copy constructor for matrix class.
-	-> Write a copy constructor for singly link list.
+	-> Write a copy constructor for matrix class. #TODO
+	-> Write a copy constructor for singly link list. #TODO
 
 */
 int main(void) {
-	
+	narray::Array a1(3);
+	a1.acceptRecord();
+	a1.printRecord();
+	narray::Array a2(a1);
+	a2.printRecord();
 	return 0;
 }

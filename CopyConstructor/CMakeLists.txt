@@ -4,6 +4,6 @@
 cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
-add_executable (test "main.cpp")
+add_executable (test "main.cpp" "Array.cpp" "Array.h")
 
 # TODO: Add tests and install targets if needed.
