@@ -1,5 +1,6 @@
 #include<iostream>
 #include"Array.h"
+#include"Matrix.h"
 
 /*
 	-> There are 3 types of copy avaliable 
@@ -31,6 +32,18 @@
 
 */
 int main(void) {
+	nmatrix::Matrix m1(3);
+	m1.acceptRecord();
+	m1.printRecord();
+	nmatrix::Matrix m2(m1);
+	m2.printRecord();
+	return 0;
+}
+
+
+
+
+int main2(void) {
 	narray::Array a1(3);
 	a1.acceptRecord();
 	a1.printRecord();

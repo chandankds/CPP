@@ -1,12 +1,9 @@
 CopyConstructor	
-	-> Write a copy constructor for matrix class. #TODO
 	-> Write a copy constructor for singly link list. #TODO
 
-FriendFunction
-	-> All in the file
 
 NestedClass
-	-> All in the file
+	-> All in the file make it for linklist only.
 
 
 
