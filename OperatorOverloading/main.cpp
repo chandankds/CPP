@@ -24,8 +24,10 @@
 /*
 	Overload +, -, *, / of the Matrix class with the copy constructor as well.
 	Overload the == operator inside the Point class.
-
-
+	Overload the non member functions and make them friends.
+	Overload the relational operator using non member function.
+	Overload the short hand operator. +=
+	
 */
 
 int main() {
