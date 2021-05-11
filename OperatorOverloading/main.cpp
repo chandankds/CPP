@@ -1,6 +1,7 @@
 #include<iostream>
 #include"Point.h"
 #include"Matrix.h"
+#include"Array.h"
 
 #define NPT npoint::
 /*
@@ -29,11 +30,25 @@
 	Overload the non member functions and make them friends.
 	Overload the relational operator using non member function.
 	Overload the short hand operator. +=
-	
+	Overload the insertion << and extersion >> operators in matrix class (You cant overload it as memberfunctions overload it externally because members in ostream and istream are protected)
+	Overload the [] operator so you can access aray elements easily;
 */
 
+std::ostream& operator<<(std::ostream& out, Array &a1) {
+	a1.printRecord();
+	return out;
+}
 
 int main() {
+	Array a1(3);
+	a1.acceptRecord();
+	int val = a1[1]; //working fine overloaded the [] operator.
+	std::cout << "Val is " << val << std::endl;
+	std::cout << a1 << std::endl;
+	return 0;
+}
+
+int main2() {
 	nmatrix::Matrix m1(2);
 	m1.acceptRecord();
 	m1.printRecord();
@@ -46,7 +61,7 @@ int main() {
 	nmatrix::Matrix m2 = m1;
 	m2.printRecord();
 	m1 == m2 ? std::cout << "Equal" << std::endl : std::cout << "Not Equal" << std::endl;
-	nmatrix::Matrix m3(2) += 5; //Try to make it work
+//	nmatrix::Matrix m3(2) += 5; //Try to make it work
 	return 0;
 }
 

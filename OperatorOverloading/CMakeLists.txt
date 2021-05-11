@@ -4,6 +4,6 @@
 cmake_minimum_required (VERSION 3.8)
 
 # Add source to this project's executable.
-add_executable (test "main.cpp" "Point.h" "Point.cpp" "Matrix.h" "Matrix.cpp")
+add_executable (test "main.cpp" "Point.h" "Point.cpp" "Matrix.h" "Matrix.cpp" "Array.h" "Array.cpp")
 
 # TODO: Add tests and install targets if needed.
