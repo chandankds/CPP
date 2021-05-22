@@ -8,6 +8,7 @@ int main() {
 	//std::cout << a1[1] << std::endl;
 	Array a3 = a1;
 	std::cout << a3;
+	a1 = a3;
 	std::cout << "Program has ended" << std::endl;
 	return 0;
 }

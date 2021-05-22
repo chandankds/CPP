@@ -2,6 +2,7 @@
 
 
 /*
+	-> Destructor can be called explictely.
 	-> Destructor is a member Function of the class which is used to release the resources released by the class
 	-> It is a implicit function called by the cpp runtime when the object goes out of scope.
 	-> Same name as class with ~ in the begining take no parameter returns nothing.

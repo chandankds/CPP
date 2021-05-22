@@ -44,6 +44,18 @@ int Array::operator[](int num) {
 }
 
 
+Array& Array::operator=(const Array& other) {
+	std::cout << "Inside the = operator " << std::endl;
+	this->~Array();
+	this->size = other.size;
+	this->ptr = new int[this->size];
+	for (int i = 0; i < this->size; i++) {
+		this->ptr[i] = other.ptr[i];
+	}
+	return *this;
+}
+
+
 
 
 
