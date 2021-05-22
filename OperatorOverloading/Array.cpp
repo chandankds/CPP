@@ -20,7 +20,7 @@ void Array::printRecord() {
 	}
 }
 
-int Array::operator[](int index) {
+int Array::operator[](int index) { //make it throw array out of bound exception...
 	return ptr[index];
 }
 
