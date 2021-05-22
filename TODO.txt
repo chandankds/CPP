@@ -8,6 +8,5 @@ NestedClass
 Operator Overloading 
 	-> Overload the * operator for the matrix multiplication.
 	-> Overloading non member fucetions are not working yet.
-
-
+	-> Write the matrix class with everything(overload all the operators ) with all the members function
 
