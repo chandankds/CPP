@@ -10,3 +10,5 @@ Operator Overloading
 	-> Overloading non member fucetions are not working yet.
 	-> Write the matrix class with everything(overload all the operators ) with all the members function
 
+Lazy copy 
+	-> Lecture 12 in last 45 minutes
