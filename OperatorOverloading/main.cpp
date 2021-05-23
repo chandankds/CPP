@@ -25,6 +25,18 @@
 */
 
 /*
+	-> If the left hand side of the operator is non L-value entity overlod it in non member fuction
+	-> We should overload following operators using non member fuction
+		- Arithmetic operator 
+		- Relational operator 
+		- Logical operator
+	-> We Should overload the following operators using member fuction 
+		- Unary operator ( ++, --)
+		- Short hand operator ( += -=)
+		- =, [], (), ->
+*/
+
+/*
 	Overload +, -, *, / of the Matrix class with the copy constructor as well.
 	Overload the == operator inside the Point class.
 	Overload the non member functions and make them friends.
