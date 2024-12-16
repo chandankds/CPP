@@ -1,17 +1,19 @@
 #include<iostream>
 #include"complex.h"
 /*Four Functions cannnot be decleared constant 
-	-constructor
-	-distructor
+	-constructor because it initializes the object ie modifies it.
+	-distructor because it destroys the object ie modifies it.
 	-global functions including main because they are not designed to be called on pointer (no this*)
-	-static member functions 
+	-static member functions, because they are accociated with class not object. hence no this*.
 */
 
 /*
-	Class cannot be created as constant but c++11 have something called final if intrested explore it.
-	const should be in declaration and defination both.
-	member initilizer list should be in defination only.
-	defult argument should be in declaration only.
+	- Class cannot be created as constant but c++11 have something called final, if some class 
+	is declared as final then it cannot be inherited and if member function is declared as final then it cannot be overriden.
+	it helps compiler to optimize the code because compiler need no to check for virtual function or vtable.
+	- const should be in declaration and defination both.
+	- member initilizer list should be in defination only.
+	- defult argument should be in declaration only.
 */
 int main(void) {
 	using namespace ncomplex;
